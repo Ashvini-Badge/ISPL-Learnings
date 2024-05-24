@@ -1,0 +1,19 @@
+.main{
+    width: 1000px;
+    height: 500px;
+    font-size: 70px;
+    font-family: 'Times New Roman';
+    background-color: orange;
+    color: red;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-align: center;
+    word-spacing: 100px;
+    letter-spacing: 20px;
+}
+.main:hover {
+         height: 300px;
+         font-size: 50px;
+         color: white;
+         background-color: green;
+}
