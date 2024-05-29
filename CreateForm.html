@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            background-color: #0d1c64;
+            border: 5px solid black;
+            border-radius: 20px;
+            width: 500px;
+            padding: 30px;
+            margin: 50px auto;
+            color: white;
+            text-align: left;
+        }
+    
+        .label {
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    
+        .text, .option {
+            height: 30px;
+            width: 250px;
+            padding: 5px;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+    
+        .submit {
+            color: white;
+            padding: 15px 50px;
+            margin-top: 20px;
+            background-color: blue;
+            font-size: 20px;
+            border: none;
+            border-radius: 39px;
+            cursor: pointer;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <form class="container" action="/action.php">
+       <h1>Registration</h1>
+       <div>
+          <label for="1" class="label">*First Name: </label>
+          <input type="text" class="text" name="First_name" id="1" placeholder="Enter first name">
+       
+          <label for="2" class="label">*Last Name: </label>
+          <input type="text" class="text" name="Last_name" id="2" placeholder="Enter last name">
+         
+          <label for="3" class="label">*Email:</label>
+          <input type="text" class="text" name="Email" id="3" placeholder="Enter email address">
+         
+          <label class="label">Student Gender:</label>
+         
+          <label for="5" class="option"><input type="radio" class="radio" value="Male" name="Gender" id="5"> Male</label>
+                        
+          <label for="6" class="option"><input type="radio" class="radio" value="Female" name="Gender" id="6"> Female</label>            
+       </div>
+       
+       <label for="7" class="label">*Select Class:</label>
+       <select name="Class" class="text" placeholder="Select class">
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>            
+       </select>
+       
+       <br>
+       <input type="submit" class="submit" value="SUBMIT">
+       <br>
+       <p>You MUST be 18 years or older to enroll in any of our cannabis certificate programs. By submitting this form you acknowledge you have read and agree to the
+          <a href="https://www.google.com/" target="_main">program policies.</a>
+       </p>
+    </form>
+ </body>
+ 
+</html>
